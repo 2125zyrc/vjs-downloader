@@ -1,6 +1,6 @@
 {
   "name": "vjs-downloader",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "main": "dist/vjs-downloader.umd.js",
   "module": "dist/vjs-downloader.es.js",
   "style": "dist/vjs-downloader.css",
@@ -20,6 +20,10 @@
   "author": {
     "name": "smasun",
     "email": "2125zyrc@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/2125zyrc/vjs-downloader.git"
   },
   "license": "ISC",
   "description": "",

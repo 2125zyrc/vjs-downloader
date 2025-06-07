@@ -56,8 +56,6 @@ function vjsDownloader(options){
         _player.trigger("download");
     }
 
-    _videojs.registerPlugin('vjs-downloader', vjsDownloader);
-
 }
 
 export default vjsDownloader;

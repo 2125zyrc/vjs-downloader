@@ -37,9 +37,11 @@ export default {
   },
   mounted() {
     // Initialize video.js player
+    videojs.registerPlugin("vjsDownloader", vjsDownloader)
     this.player = videojs(this.$refs.videoPlayer, {
       plugins: {
-        download: {
+        vjsDownloader: {
+          videojs: videojs,
           downloadText: 'Download Video',
           downloadClass: 'vjs-download-button'
         }
