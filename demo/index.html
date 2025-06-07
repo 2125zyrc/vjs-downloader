@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video.js Download Plugin Demo</title>
+    <!-- Video.js CSS -->
+    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
+    <!-- Our plugin CSS -->
+    <link href="../dist/vjs-downloader.min.css" rel="stylesheet" />
+    <style>
+        .video-container {
+            max-width: 800px;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <video
+            id="my-video"
+            class="video-js vjs-default-skin"
+            controls
+            preload="auto"
+            width="800"
+            height="450"
+            data-setup='{}'
+        >
+            <source src="https://vjs.zencdn.net/v/oceans.mp4" type="video/mp4" />
+            <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider upgrading to a
+                web browser that supports HTML5 video
+            </p>
+        </video>
+    </div>
+
+    <!-- Video.js -->
+    <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+    <!-- Our plugin -->
+    <script src="../dist/vjs-downloader.umd.js"></script>
+    <script>
+     
+        videojs.registerPlugin("vjsDownloader", vjsDownloader)
+        var player = videojs('my-video', {
+            plugins: {
+                vjsDownloader: {
+                    controlText: '下载',
+                }
+            }
+        });
+    </script>
+</body>
+</html> 

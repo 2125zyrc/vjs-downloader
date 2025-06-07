@@ -1,0 +1,49 @@
+{
+  "name": "vjs-downloader",
+  "version": "1.0.0",
+  "main": "dist/vjs-downloader.umd.js",
+  "module": "dist/vjs-downloader.es.js",
+  "style": "dist/vjs-downloader.css",
+  "scripts": {
+    "build": "rollup -c  --bundleConfigAsCjs",
+    "build:prod": "NODE_ENV=production rollup -c --bundleConfigAsCjs"
+  },
+  "keywords": [
+    "videojs",
+    "video.js",
+    "video",
+    "player",
+    "plugin",
+    "download",
+    "videojs-plugin"
+  ],
+  "author": {
+    "name": "smasun",
+    "email": "2125zyrc@gmail.com"
+  },
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@babel/core": "^7.27.1",
+    "@babel/preset-env": "^7.27.2",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^28.0.3",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "postcss": "^8.5.4",
+    "rollup": "^4.41.0",
+    "rollup-plugin-postcss": "^4.0.2"
+  },
+  "peerDependencies": {
+    "video.js": ">=7.0.0"
+  },
+  "dependencies": {
+    "video.js": ">=7.0.0"
+  },
+  "volta": {
+    "node": "18.20.7"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "> 1%"
+  ]
+}
