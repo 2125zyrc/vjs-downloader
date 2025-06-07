@@ -1,6 +1,6 @@
 {
   "name": "vjs-downloader",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "main": "dist/vjs-downloader.umd.js",
   "module": "dist/vjs-downloader.es.js",
   "style": "dist/vjs-downloader.css",
